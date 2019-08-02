@@ -1,0 +1,10 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+.footer{
+    width: 100%;
+    background: linear-gradient(78.54deg,#4d96ff 20.98%,#9570ee 80.22%);
+    color: #fff;
+    height: 50px;
+}
