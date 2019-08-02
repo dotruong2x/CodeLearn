@@ -15,12 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
+Route::get('/footer', function () {
     return view('footer');
 });
-Route::get('/', function () {
+Route::get('/header', function () {
     return view('header');
 });
-Route::get('/', function () {
+Route::get('/masterlayout', function () {
     return view('masterlayout');
 });
