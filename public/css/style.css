@@ -1,10 +1,263 @@
-img{
-    max-width: 100%;
-    height: auto;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-.footer{
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*-------Setup basics CSS---------*/
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;/* 1rem = 10px */
+    /*overflow-x: hidden;*/
+    letter-spacing: 0.2px;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+input,
+textarea,
+button {
+    outline: none;
+    box-shadow: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*------------Style Here-------------*/
+
+/*------------Header-------------*/
+header {
+	/*font-size: 1.6rem;*/
+}
+
+nav {
+	height: 70px;
+}
+
+.nav-bg {
+	background: linear-gradient(29.81deg,#4D96FF 0%,#9570EE 100%);
+}
+
+.navbar-nav {
+	line-height: 25px;
+}
+
+.collapse.navbar-collapse {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-nav .nav-item .nav-link {
+	color: #fff;
+	padding: 15px 20px;
+	transition: all 0.4s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+	border-radius: 25px;
+    background-color: #5582ec!important;
+}
+
+.navbar-nav .nav-item .nav-link:focus {
+	color: #fff;
+}
+
+.dropdown-lang,
+.dropdown-lang-en,
+.dropdown-lang-vn {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.dropdown-lang:hover {
+	color: #fff !important;
+}
+
+.navbar-right {
+	margin-bottom: 0 !important;
+}
+
+.dropdown-lang:active,
+.dropdown-lang-en:active,
+.dropdown-lang-vn:active {
+	color: #fff;
+}
+
+.dropdown-lang:focus {
+	color: #fff !important;
+}
+
+.dropdown-lang {
+	color: #fff;
+}
+
+.dropdown-lang span,
+.dropdown-lang-en span,
+.dropdown-lang-vn span {
+	padding-left: 5px;
+}
+
+.navbar-right {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.fa-bell,
+.fa-info-circle {
+	color: #fff;
+	font-size: 20px;
+}
+
+.navbar-right li a {
+	padding: 10px 10px;
+}
+
+.dropdown-info {
+	padding: 5px 10px;
+}
+
+.dropdown-info a {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.dropdown-info a:last-child {
+	border-bottom: none;
+}
+
+.dropdown-info, 
+.dropdown-language {
+	border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.dropdown-language {
+	/*top: 50px;*/
+}
+
+
+/*---------------Footer--------------*/
+
+.footer {
     width: 100%;
     background: linear-gradient(78.54deg,#4d96ff 20.98%,#9570ee 80.22%);
     color: #fff;
     height: 50px;
+}
+
+.footer-copyright {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 0;
+	line-height: 50px;
+}
+
+.footer-copyright span {
+	padding-left: 5px;
+}
+
+.footer-support span a {
+	color: #fff;
+}
+
+.footer-support {
+	/*line-height: 50px;*/
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.footer-support span a:hover {
+	color: #fff;
+	text-decoration: underline !important;
+}
+
+.footer-support i {
+	color: #fff;
+	font-size: 35px;
+	padding-left: 20px;
+}
+
+.help {
+	display: flex;
+}
+
+.help a {
+	padding-right: 20px;
 }

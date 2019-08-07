@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::get('/footer', function () {
     return view('footer');
@@ -21,6 +18,19 @@ Route::get('/footer', function () {
 Route::get('/header', function () {
     return view('header');
 });
-Route::get('/masterlayout', function () {
-    return view('masterlayout');
+Route::get('/', function () {
+    return view('master-layout');
+});
+
+Route::get('/index', function () {
+    return view('index');
+});
+
+// Route::get('test',function()
+// {
+// 	return view('pages.test');
+// });
+
+Route::get('/fights', function () {
+    return view('pages.fights');
 });
